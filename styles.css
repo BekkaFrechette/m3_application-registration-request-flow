@@ -17,7 +17,7 @@ body{
     margin:0;
     color:var(--color-text);
     background:var(--color-surface);
-    font-family:Arial,sans-serif;
+    font-family:Rubik, Arial;;
     line-height:1.6;
 }
 .page-header{
