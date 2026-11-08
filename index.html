@@ -9,24 +9,39 @@
         <header class="page-header">
             <p class="eyebrow">Application, Registration, or Request</p>
             <h1>New England Summer Camp Sign Up</h1>
-            <p class="lede">This form is for parents to fill out to sign their child up for 2027 camping. It will take about 5 minutes to complete this form, and someone from the NESC team will reach out with further steps in the following week(s).</p>
+            <p class="lede">This form is for parents to fill out to sign their child (ages 6-12) up for 2027 camping. It will take about 5 minutes to complete this form, and someone from the NESC team will reach out with further steps in the following week(s).</p>
         </header>
         <main>
             <section id="expectations">
                 <h2>F1 · Purpose and Expectations</h2>
-                <p>State the required/optional convention and a concise privacy notice. Use fictional test data only.</p>
+                <p>Please fill out all required fields with accurate information</p>
             </section>
-            <form action="" method="get">
+            <form action="" method="post">
                 <fieldset>
-                    <legend>F3 · Contact information</legend>
-                    <p class="help">Replace or extend this group based on your justified field inventory.</p>
+                    <legend>F3 · Child's Information</legend>
+                    <p class="help">Please enter child's legal first and last name and their age as of June 1st, 2027</p>
                     <div class="field">
-                        <label for="name">Name</label>
-                        <input id="name" name="name" type="text" autocomplete="name">
+                        <label for="name">Child's Name</label>
+                        <input id="name" name="name" type="text" autocomplete="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="field">
+                        <label for="age">Child's Age</label>
+                        <input id="age" name="age" type="number" min="6" max="12" required>
+                    </div>
+
+                    <legend>F3 · Contact Information</legend>
+                    <p class="help">Please enter your child's emergency contact information</p>
+                    <div class="field">
+                        <label for="name">Contact's Name</label>
+                        <input id="name" name="name" type="text" autocomplete="name" placeholder="John Doe" required>
                     </div>
                     <div class="field">
                         <label for="email">Email address (required)</label>
-                        <input id="email" name="email" type="email" autocomplete="email" required>
+                        <input id="email" name="email" type="email" placeholder="example@email.com" autocomplete="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="phone">Phone number (required)</label>
+                        <input id="phone" name="phone" type="tel" placeholder="123-456-7890" required>
                     </div>
                 </fieldset>
                 <fieldset>
